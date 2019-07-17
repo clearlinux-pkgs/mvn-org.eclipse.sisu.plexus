@@ -4,13 +4,14 @@
 #
 Name     : mvn-org.eclipse.sisu.plexus
 Version  : 0.3.3
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
 Source0  : https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
 Source1  : https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
 Source2  : https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
-Source3  : https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
-Source4  : https://repo1.maven.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
+Source3  : https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+Source4  : https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
+Source5  : https://repo1.maven.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : EPL-1.0
@@ -41,11 +42,14 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.ec
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.2
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.3
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
 
 
 %files
@@ -57,4 +61,5 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-p
 /usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
 /usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
 /usr/share/java/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
+/usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
 /usr/share/java/.m2/repository/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
